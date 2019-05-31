@@ -97,7 +97,7 @@ container.gallery-container {
 	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
 }
 
-.gallery-container h1 {
+.gallery-container h2 {
 	text-align: center;
 	margin-top: 70px;
 	font-family: 'Droid Sans', sans-serif;
