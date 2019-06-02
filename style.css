@@ -72,11 +72,28 @@ body{
 	padding: 1rem 1rem;
 }
 
-@media(max-width:768px){
-	.header-content h1{font-size: 40px;}
+/* @media(max-width:768px){
+	.header-content{
+		z-index: 2;
+		margin-top:20%;
+		padding: 0 5rem;
+		
+	}
+	.header-content h1{font-size: 40px; margin-top: 10%;}
 	.header-content p{font-size: 1rem;}
-}
+} */
 
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+	.header-content{
+		z-index: 2;
+		margin-top:50%;
+		padding: 0 5rem;
+		
+	}
+	.header-content h1{font-size: 40px; }
+	.header-content p{font-size: 1rem;}
+ }
 section{
 
 	text-align: center;
