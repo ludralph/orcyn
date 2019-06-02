@@ -14,11 +14,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
   <!-- Font Awesome -->
 
-<script src="https://kit.fontawesome.com/4aed318ffb.js"></script>
+  <script src="https://kit.fontawesome.com/4aed318ffb.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
@@ -204,39 +207,39 @@
         </ul>
       </div>
     </div>
-    <p class="residential-writeup last-paragraph">Orcyn-Next can help you with special occasion cleaning for a family gathering,
+    <p class="residential-writeup last-paragraph">Orcyn-Next can help you with special occasion cleaning for a family
+      gathering,
       cleaning before and after a dinner party, seasonal cleaning, prepare a room for a fresh coat of paint and
       move-in/move-out cleaning.
     </p>
 
     <div class="card-body px-lg-5 pt-0">
 
-        <form class="border border-light p-5" id="form">
+      <form class="border border-light p-5" id="form" action="https://formspree.io/raphaelumoh@gmail.com" method="POST">
 
-            <p class="h4 mb-4 card-header info-color white-text text-center py-4">Request A Quote</p>
-        
-        
-            <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
-        
-            <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
-        
-            <label for="defaultSelect">Choose a cleaning service</label>
-            <select id="defaultSelect" class="browser-default custom-select mb-4">
-                <option value="">Choose option</option>
-                <option value="1">Post Construction Cleaning</option>
-                <option value="2">Residential Cleaning</option>
-                <option value="3">Commercial Cleaning</option>
-                <option value="4">Move-in & Move-out Cleaning</option>
-            </select>
-        
-            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
-        
-            <div class="custom-control custom-checkbox mb-4">
-                <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-            </div>
-        
-            <button class="btn btn-info btn-block" type="submit">Send</button>
-        </form>
+        <p class="h4 mb-4 card-header info-color white-text text-center py-4">Request A Quote</p>
+
+
+        <input type="text" name="name" id="defaultContactFormName" class="form-control mb-4" placeholder="Name" required>
+
+        <input type="email" name="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail" required>
+
+        <label for="defaultSelect">Choose a cleaning service</label>
+        <select id="defaultSelect" name="service"class="browser-default custom-select mb-4">
+          <option value="">Choose option</option>
+          <option value="Post Construction Cleaning">Post Construction Cleaning</option>
+          <option value="Residential Cleaning">Residential Cleaning</option>
+          <option value="Commercial Cleaning">Commercial Cleaning</option>
+          <option value="Move-in & Move-out Cleaning">Move-in & Move-out Cleaning</option>
+        </select>
+
+        <textarea name="message" class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message" required></textarea>
+
+        <div class="mb-4">
+        </div>
+
+        <button class="btn btn-info btn-block" type="submit" id="sendBtn">Send</button>
+      </form>
     </div>
   </div>
   </div>
@@ -256,7 +259,7 @@
           <h5 class="text-uppercase text-center">Contact US</h5>
           <p class="text-center"><i class="fas fa-phone fa-2x"></i> 2347059932906, 2348165027073</p>
           <p class="text-center"><i class="fas fa-envelope-square fa-2x"></i> info@orcyn-next.com</p>
-          <p class="text-center"><i class="fas fa-compass fa-2x"></i>   Lekki Phase 1, Lagos</p>
+          <p class="text-center"><i class="fas fa-compass fa-2x"></i> Lekki Phase 1, Lagos</p>
           <p class="text-center">One Call, Cleans it All</p>
 
         </div>
@@ -298,17 +301,45 @@
 
 
   <!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/js/mdb.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/js/mdb.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
   <script>
     baguetteBox.run('.tz-gallery');
+  </script>
+  <script>
+    // document.getElementById('sendBtn').addEventListener('click', (event) => {
+    //   event.preventDefault();
+    //   const nameField = document.getElementById('defaultContactFormName').value;
+    //   const emailField = document.getElementById('defaultContactFormEmail').value;
+    //   const messageField = document.getElementById('exampleFormControlTextarea2').value;
+    //   const select = document.querySelector("select");
+
+    //   function getSelectedOption(select) {
+    //     let option = '';
+    //     for (var i = 0, len = select.options.length; i < len; i++) {
+    //       option = select.options[i];
+    //       if (option.selected === true) {
+    //         break;
+    //       }
+    //     }
+    //     return option;
+    //   }
+
+    //   const option = getSelectedOption(select);
+      
+    //   const serviceSelected = option.text;
+
+    // })
+
   </script>
 </body>
 
