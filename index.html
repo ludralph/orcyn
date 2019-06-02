@@ -7,14 +7,19 @@
     One Call Cleans it All">
   <meta name="keywords" content="home cleaning, office cleaning, industrial cleaning, orcyn-next cleaning">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
   <link href="https://fonts.googleapis.com/css?family=Heebo|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/css/mdb.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+
+<script src="https://kit.fontawesome.com/4aed318ffb.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
   <title>Orcyn-Next | Cleaning Services</title>
 </head>
@@ -36,7 +41,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Request a Quote</a>
+          <a class="nav-link" href="#form">Request a Quote</a>
         </li>
       </ul>
     </div>
@@ -95,9 +100,9 @@
             Washing All Surfaces
           </li>
           <li>
-              <span style="font-size: 24px; color: Dodgerblue;">
-                  <i class="fas fa-check"></i>
-                </span>
+            <span style="font-size: 24px; color: Dodgerblue;">
+              <i class="fas fa-check"></i>
+            </span>
             Dust Removal From Ceiling Pipes, Duct Work, Vents, Light Fixtures
           </li>
           <li><span style="font-size: 24px; color: Dodgerblue;">
@@ -198,13 +203,41 @@
         </ul>
       </div>
     </div>
-
-
-
-    <p class="residential-writeup">Orcyn-Next can help you with special occasion cleaning for a family gathering,
+    <p class="residential-writeup last-paragraph">Orcyn-Next can help you with special occasion cleaning for a family gathering,
       cleaning before and after a dinner party, seasonal cleaning, prepare a room for a fresh coat of paint and
       move-in/move-out cleaning.
     </p>
+
+    <div class="card-body px-lg-5 pt-0">
+
+        <form class="border border-light p-5" id="form">
+
+            <p class="h4 mb-4 card-header info-color white-text text-center py-4">Request A Quote</p>
+        
+        
+            <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+        
+            <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+        
+            <label for="defaultSelect">Choose a cleaning service</label>
+            <select id="defaultSelect" class="browser-default custom-select mb-4">
+                <option value="">Choose option</option>
+                <option value="1">Post Construction Cleaning</option>
+                <option value="2">Residential Cleaning</option>
+                <option value="3">Commercial Cleaning</option>
+                <option value="4">Move-in & Move-out Cleaning</option>
+            </select>
+        
+            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+        
+            <div class="custom-control custom-checkbox mb-4">
+                <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+            </div>
+        
+            <button class="btn btn-info btn-block" type="submit">Send</button>
+        </form>
+    </div>
+  </div>
   </div>
   <!-- Footer -->
   <footer class="page-footer font-small blue pt-4">
@@ -219,11 +252,11 @@
         <div class="col-md-6 mt-md-0 mt-3">
 
           <!-- Content -->
-          <h5 class="text-uppercase">Contact US</h5>
-          <p><i class="fas fa-phone fa-2x"></i> 2347059932906, 2348165027073</p>
-          <p><i class="fas fa-envelope-square fa-2x"></i> info@orcyn-next.com</p>
-          <p><i class="fas fa-compass fa-2x"></i> Lekki Phase 1, Lagos</p>
-          <p>One Call, Cleans it All</p>
+          <h5 class="text-uppercase text-center">Contact US</h5>
+          <p class="text-center"><i class="fas fa-phone fa-2x"></i> 2347059932906, 2348165027073</p>
+          <p class="text-center"><i class="fas fa-envelope-square fa-2x"></i> info@orcyn-next.com</p>
+          <p class="text-center"><i class="fas fa-compass fa-2x"></i>   Lekki Phase 1, Lagos</p>
+          <p class="text-center">One Call, Cleans it All</p>
 
         </div>
         <!-- Grid column -->
@@ -234,17 +267,14 @@
         <div class="col-md-3 mb-md-0 mb-3">
 
           <!-- Links -->
-          <h5 class="text-uppercase">Social Media Links</h5>
+          <h5 class="text-uppercase text-center">Let's Connect</h5>
 
           <ul class="list-unstyled">
-            <li>
+            <li class="text-center">
               <a href="https://www.instagram.com/orcyn_next_cleaning/" target="_blank"><i
-                  class="fab fa-instagram fa-2x"> orcyn_next_cleaning</i></a>
+                  class="fab fa-instagram fa-3x"></i></a>
             </li>
             <br>
-            <li>
-              <a href="#!"><i class="fab fa-linkedin fa-2x"></i></a>
-            </li>
           </ul>
 
         </div>
@@ -266,15 +296,15 @@
   <!-- Footer -->
 
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-    crossorigin="anonymous"></script>
+  <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/js/mdb.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
   <script>
     baguetteBox.run('.tz-gallery');

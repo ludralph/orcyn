@@ -146,6 +146,10 @@ container.gallery-container {
 	list-style: none;
 }
 
+.last-paragraph{
+	margin-bottom: 10%;
+}
+
 
 @media(max-width: 768px) {
 	body {
